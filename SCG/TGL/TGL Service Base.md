@@ -15,7 +15,7 @@ The "TGL Service Base" library serves as the foundational framework for TGL C++ 
 * Incorporated components for monitoring service health and sending heartbeats
 * Created unit tests for end-to-end testing of MQTT pub/sub topics
 
-### Acomplishments
+### Accomplishments
 * Learned about detached processes in multi-threaded C++ applications (fire and forget)
 
 ## Tasks
@@ -23,5 +23,6 @@ The "TGL Service Base" library serves as the foundational framework for TGL C++ 
 ### Self-Created Tasks
 - [ ] Update MQTT topics to fit confluence reference ➕ 2023-07-28
 - [ ] Command handle to process individual commands from cmd line (baseservicebuilder) ➕ 2023-07-28
+- [ ] Determine why CI/CD build is failing on the unit test for TGL Service Example ➕ 2023-08-01 
 
 ### Jira Tasks

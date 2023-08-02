@@ -16,7 +16,7 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 * Responsible for the entire application development process, integrating components for frame capture, inference, and MQTT communication
 * Established tests for quality assurance of algorithms and trained models, ensuring the application's reliability and accuracy
 
-### Acomplishments
+### Accomplishments
 * Learned about synchronization in multi-threaded C++ applications (knew some already for C and C#)
 * Sped up image processing 25% on CPU side by parallelizing capture and inference functionalities (120 ms vs 160 ms) (on discovery hardware)
 * FUTURE: Sped up % by parallelizing GPU side??

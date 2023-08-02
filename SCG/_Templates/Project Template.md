@@ -13,7 +13,7 @@ template-should-create: "open-pane"
 ### Work Performed
 {{work}}
 
-### Acomplishments
+### Accomplishments
 {{accomplishments}}
 
 ## Tasks

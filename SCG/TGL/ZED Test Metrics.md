@@ -1,5 +1,5 @@
 ## Description
-"ZED Test Metrics" is a C#/.Net based application that consumes post-execution data, in the form of JSON files, from the "Ball Origin Spotter" (BOS) and the "ZED Capture" applications. It provides analytics on how accurate and precise any given set of models and algorithms were for the BOS for each test run based on truth data gathered pre-execution by the "ZED Capture" application.
+"ZED Test Metrics" is a C#/.NET based application that consumes post-execution data, in the form of JSON files, from the "Ball Origin Spotter" (BOS) and the "ZED Capture" applications. It provides analytics on how accurate and precise any given set of models and algorithms were for the BOS for each test run based on truth data gathered pre-execution by the "ZED Capture" application.
 
 ## Take-Aways
 ### Work Performed
@@ -10,8 +10,8 @@
 	* average processing time
 	* missed test points
 
-### Acomplishments
-{{accomplishments}}
+### Accomplishments
+
 
 ## Tasks
 

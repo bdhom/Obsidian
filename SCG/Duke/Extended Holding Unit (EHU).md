@@ -1,6 +1,7 @@
 ## Tasks
 
 ### Self-Created Tasks
+- [ ] Attempt to replicate "DB loading slow bug" ➕ 2023-08-01
 
 ### Jira Tasks
 - [x] EHU-184: Setup testing and developer environment for EHU ➕ 2023-07-11 ✅ 2023-07-14
