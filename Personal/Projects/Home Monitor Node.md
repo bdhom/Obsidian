@@ -11,7 +11,10 @@ The Home Monitor Node (HMN) is an IoT node that monitors temperature, humidity, 
 ### Accomplishments
 
 ## Tasks
-- [ ] Connect queue manager to ble ➕ 2023-08-05
+- [ ] Re-familiarize self w/ code base ➕ 2023-08-05 
+- [ ] Sort current changes into succinct commits ➕ 2023-08-05
+- [ ] Test functionality of the current state ➕ 2023-08-05
+- [ ] Connect queue manager to BLE ➕ 2023-08-05
 - [ ] Setup and test I2C sensor communication ➕ 2023-08-05
 - [ ] Setup system to handle notifications / upstream messages ➕ 2023-08-05
 	 - [ ] For BLE ➕ 2023-08-05
