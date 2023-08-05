@@ -31,13 +31,16 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 - [ ] Club obstruction filter ➕ 2023-07-28  ^f068e4
 	* Ball should not be removed from memory if obstructed by club.
 	* If club obstruction algorithm selected, ball shall be selected as "the ball" that program cares about.
-- [ ] Add weighted positioning calculation ➕ 2023-07-28
+- [ ] Add weighted positioning calculation?? ➕ 2023-07-28
 - [ ] Implement dynamic ROI ➕ 2023-07-28 
 - [ ] Remove position filter ➕ 2023-07-28 
-- [ ] Get rid of deprecated warnings ➕ 2023-07-28 
-- [ ] Update submodule once TGL Service Base updated?? ➕ 2023-07-28 
-- [ ] Look into providing parallelized GPU support ➕ 2023-07-28 
+- [ ] Look into providing parallelized GPU support ➕ 2023-07-28
+- [ ] Look into getting an SDK running on windows (WSL) ➕ 2023-08-04
+- [ ] Rename from "detection"/"zed-detection" to "Ball Origin Spotter"/"BOS" ➕ 2023-08-04
+- [ ] Rename variables to fit standard (yolov8) ➕ 2023-08-04 
 - [x] Ensure that above description is correct/fact-checked ➕ 2023-07-29 ✅ 2023-07-30
+- [x] Update submodule once TGL Service Base updated?? ➕ 2023-07-28 ✅ 2023-08-04
+- [x] Get rid of deprecated warnings ➕ 2023-07-28 ✅ 2023-08-04
 
 ### Jira Tasks
 

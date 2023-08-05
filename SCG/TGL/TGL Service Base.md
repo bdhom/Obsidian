@@ -23,6 +23,6 @@ The "TGL Service Base" library serves as the foundational framework for TGL C++ 
 ### Self-Created Tasks
 - [ ] Update MQTT topics to fit confluence reference ➕ 2023-07-28
 - [ ] Command handle to process individual commands from cmd line (baseservicebuilder) ➕ 2023-07-28
-- [ ] Determine why CI/CD build is failing on the unit test for TGL Service Example ➕ 2023-08-01 
+- [x] Determine why CI/CD build is failing on the unit tests ➕ 2023-08-01 ✅ 2023-08-03
 
 ### Jira Tasks

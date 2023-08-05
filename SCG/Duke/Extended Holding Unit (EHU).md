@@ -9,6 +9,8 @@
     - [x] EHU-174 & EHU-194: Create CANbus handler to store calibration value on the new controller (phase 2) ➕ 2023-07-21 ✅ 2023-07-24
     - [x] EHU-195: Validation testing of EOL line of PEHU firmware with CANbus analyzer ➕ 2023-07-28 ✅ 2023-07-29
     - [ ] EHU-176: As an EHU user I would like to validate that the EHU is able to proceed through the EOL process ➕ 2023-07-31 
-- [ ] EHU-197: Yocto Learning ➕ 2023-07-31 
-- [ ] EHU-180: Create a firmware version at end of sprint and have it deployable on an actual unit for control comparison testing and qmetry testing ➕ 2023-07-31
+- [x] EHU-197: Yocto Learning ➕ 2023-07-31 ✅ 2023-08-04
+- [x] EHU-180: Create a firmware version at end of sprint and have it deployable on an actual unit for control comparison testing and qmetry testing ➕ 2023-07-31 ✅ 2023-08-04
 - [ ] EHU-196: Engineering testing validation ➕ 2023-07-31
+- [ ] EHU-38: As a EHU user I would like to implement high humidity faults ➕ 2023-08-04
+- [ ] EHU-214: Calibration values not showing correctly ➕ 2023-08-04
