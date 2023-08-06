@@ -10,6 +10,8 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 * Start Date: first commit - 2023-05-02
 * End Date: last commit - 2023-07-07 (will have future work)
 * Team Work Description: Sole developer. Started from scratch
+* Languages Used: C++, python, shell
+* Tools/Frameworks Used: ZED SDK, CUDA, TensorRT, YOLOv8, Docker, CMake, clang-format, git
 
 ### Work Performed
 * Conducted discovery for NVIDIA Jetson and ZED camera platforms running Docker containers with ML models for object detection and positioning/distance measurements
@@ -20,14 +22,14 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 * Learned about synchronization in multi-threaded C++ applications (knew some already for C and C#)
 * Sped up image processing 25% on CPU side by parallelizing capture and inference functionalities (120 ms vs 160 ms) (on discovery hardware)
 * FUTURE: Sped up % by parallelizing GPU side??
-* FUTURE: Improved accuracy of measurements or object identification??
+* FUTURE: Improved accuracy of measurements or object identification by finding an alternative algorithm??
 
 ## Tasks
 
 ### Self Created Tasks
 - [ ] Object memory ➕ 2023-07-28
 	* Objects should be remembered if it is not too far from last position over a specified amount of frames
-		* Exception to this would be [[Ball Origin Spotter#^f068e4|Club Obstruction Filter]]
+		* Exception to this would be [[Ball Origin Spotter (BOS)#^f068e4|Club Obstruction Filter]]
 - [ ] Club obstruction filter ➕ 2023-07-28  ^f068e4
 	* Ball should not be removed from memory if obstructed by club.
 	* If club obstruction algorithm selected, ball shall be selected as "the ball" that program cares about.
@@ -36,6 +38,10 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 - [ ] Remove position filter ➕ 2023-07-28 
 - [ ] Look into providing parallelized GPU support ➕ 2023-07-28
 - [ ] Look into getting an SDK running on windows (WSL) ➕ 2023-08-04
+- [ ] Look into providing depth information from the 3D point cloud rather than the depth mappings ➕ 2023-08-05 
+	* Reason for research: https://www.stereolabs.com/docs/depth-sensing/using-depth/#measuring-distance-in-point-cloud
+- [ ] Determine why ZED X daemon is not able to be reached by Docker container and if needed ➕ 2023-08-05 
+	- [ ] See if this will allow us to restart the camera if it is not responding ➕ 2023-08-05 
 - [ ] Rename from "detection"/"zed-detection" to "Ball Origin Spotter"/"BOS" ➕ 2023-08-04
 - [ ] Rename variables to fit standard (yolov8) ➕ 2023-08-04 
 - [x] Ensure that above description is correct/fact-checked ➕ 2023-07-29 ✅ 2023-07-30

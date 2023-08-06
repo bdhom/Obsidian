@@ -17,16 +17,18 @@ The Home Monitor Node (HMN) is an IoT node that monitors temperature, humidity, 
 - [ ] Connect queue manager to BLE ➕ 2023-08-05
 - [ ] Setup and test I2C sensor communication ➕ 2023-08-05
 - [ ] Setup system to handle notifications / upstream messages ➕ 2023-08-05
-	 - [ ] For BLE ➕ 2023-08-05
-		 * // notification - no ack
-		// esp_ble_gatts_send_indicate(gattsIf, param->write.conn_id,
-		// handles[IDX_CHAR_VAL_A], sizeof(notifyData), notifyData, false);
-
-		// indication - ack
-		// esp_ble_gatts_send_indicate(gattsIf, param->write.conn_id,
-		// handles[IDX_CHAR_VAL_A], sizeof(indicateData), indicateData, true);
 	- [ ] For interface ➕ 2023-08-05
 	- [ ] For downstream ➕ 2023-08-05
+	 - [ ] For BLE ➕ 2023-08-05
+```C++
+// notification - no ack
+esp_ble_gatts_send_indicate(gattsIf, param->write.conn_id, handles[IDX_CHAR_VAL_A],
+	sizeof(notifyData), notifyData, false);
+
+// indication - ack
+esp_ble_gatts_send_indicate(gattsIf, param->write.conn_id, handles[IDX_CHAR_VAL_A],
+	sizeof(indicateData), indicateData, true);
+```
 - [ ] Handle read events for sensor device (ESP_GATT_RSP_BY_APP) ➕ 2023-08-05
 - [ ] Research if performance issues for ESP_GATT_RSP_BY_APP. Possible transition to manual handling for operation service? ➕ 2023-08-05
 - [ ] Setup VS Code to debug ➕ 2023-08-05

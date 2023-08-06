@@ -1,7 +1,24 @@
+
+## Description
+The "Extended Holding Unit" (EHU) is a partial porting of a previous project, the [[Proofer Baker Center (PBC)]], to fit new hardware that fast-food restaurants (Popeye's mainly) will use to hold food (chicken) for extended periods of time while keeping the holding container within the recommended humidity and temperature ranges.
+
+## Take-Aways
+* Start Date: first commit - 2023/07/13
+* End Date: last commit - 2023/08/04
+* Team Work Description: Team of 2
+* Languages Used: C++
+* Tools/Frameworks Used: Qt (GUI)
+
+### Work Performed
+* Implemented methods to digest calibration values over CAN bus and relay these values up to the database to be stored and used after EOL (i.e. to be used in the field)
+
+### Accomplishments
+* Learned how to use a CAN bus analyzer
+* Learned the basic format of a CAN message frame
+
 ## Tasks
 
 ### Self-Created Tasks
-- [ ] Attempt to replicate "DB loading slow bug" ➕ 2023-08-01
 
 ### Jira Tasks
 - [x] EHU-184: Setup testing and developer environment for EHU ➕ 2023-07-11 ✅ 2023-07-14
@@ -14,3 +31,6 @@
 - [ ] EHU-196: Engineering testing validation ➕ 2023-07-31
 - [ ] EHU-38: As a EHU user I would like to implement high humidity faults ➕ 2023-08-04
 - [ ] EHU-214: Calibration values not showing correctly ➕ 2023-08-04
+
+## Notes
+{{notes}}

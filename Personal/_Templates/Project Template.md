@@ -1,5 +1,5 @@
 ---
-template-input: title, description, start_date, end_date, team, work, accomplishments
+template-input: title, description, start_date, end_date, work, accomplishments, notes
 template-should-create: "open-pane"
 ---
 ## Description

@@ -3,8 +3,10 @@ The "TGL Service Base" library serves as the foundational framework for TGL C++ 
 
 ## Take-Aways
 * Start Date: first commit - 2023-06-01
-* End Date: last commit - 2023-07-17 (possible future work)
-* Team Work Description: Sole developer. Started from scratch
+* End Date: last commit - 2023-08-03 (possible future work)
+* Team Work Description: Mostly sole developer aside from CI/CD. Started from scratch
+* Languages Used: C++, shell
+* Tools/Frameworks Used: Docker, CMake, clang-format, git
 
 ### Work Performed
 * Developed "TGL Service Base" MQTT and logging functionalities for use in Docker containers running TGL C++ components
@@ -16,12 +18,15 @@ The "TGL Service Base" library serves as the foundational framework for TGL C++ 
 * Created unit tests for end-to-end testing of MQTT pub/sub topics
 
 ### Accomplishments
-* Learned about detached processes in multi-threaded C++ applications (fire and forget)
+* Learned about futures and detached processes in multi-threaded C++ applications
 
 ## Tasks
 
 ### Self-Created Tasks
 - [ ] Update MQTT topics to fit confluence reference ➕ 2023-07-28
+- [ ] Remove the use of detached process and replace with futures/asyncs (std::launch::async??) ➕ 2023-08-05
+	- [ ] Have a proper clean-up for the futures (use wait_for(0)) ➕ 2023-08-05
+	- https://putridparrot.com/blog/threads-promises-futures-async-c/
 - [ ] Command handle to process individual commands from cmd line (baseservicebuilder) ➕ 2023-07-28
 - [x] Determine why CI/CD build is failing on the unit tests ➕ 2023-08-01 ✅ 2023-08-03
 
