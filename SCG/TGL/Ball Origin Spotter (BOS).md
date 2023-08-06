@@ -42,9 +42,10 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 - [ ] Look into providing depth information from the 3D point cloud rather than the depth mappings ➕ 2023-08-05 
 	* Reason for research: https://www.stereolabs.com/docs/depth-sensing/using-depth/#measuring-distance-in-point-cloud
 - [ ] Determine why ZED X daemon is not able to be reached by Docker container and if needed ➕ 2023-08-05 
-	- [ ] See if this will allow us to restart the camera if it is not responding ➕ 2023-08-05 
+	- [ ] See if this will allow us to restart the camera if it is not responding ➕ 2023-08-05
 - [ ] Rename from "detection"/"zed-detection" to "Ball Origin Spotter"/"BOS" ➕ 2023-08-04
-- [ ] Rename variables to fit standard (yolov8) ➕ 2023-08-04 
+- [ ] Rename variables to fit standard (yolov8) ➕ 2023-08-04
+- [ ] Ensure that object positioning coordinate system are same as documentation ➕ 2023-08-06 
 - [x] Ensure that above description is correct/fact-checked ➕ 2023-07-29 ✅ 2023-07-30
 - [x] Update submodule once TGL Service Base updated?? ➕ 2023-07-28 ✅ 2023-08-04
 - [x] Get rid of deprecated warnings ➕ 2023-07-28 ✅ 2023-08-04
