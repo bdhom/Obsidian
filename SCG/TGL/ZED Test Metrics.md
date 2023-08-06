@@ -7,6 +7,7 @@
 * Team Work Description: Sole developer. Started form scratch
 * Languages Used: C#
 * Tools/Frameworks Used: .NET, git
+* Platform: Windows
 ### Work Performed
 * Support JSON deserialization to extract truth and test data for analysis
 * Created analytics that gave data points and graphs based on:

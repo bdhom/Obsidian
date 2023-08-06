@@ -1,5 +1,5 @@
 ---
-template-input: title, description, start_date, end_date, team, languages, tools, work, accomplishments, notes
+template-input: title, description, start_date, end_date, team, languages, tools, platform, work, accomplishments, notes
 template-should-create: "open-pane"
 ---
 ## Description
@@ -11,6 +11,7 @@ template-should-create: "open-pane"
 * Team Work Description: {{team}}
 * Languages Used: {{languages}}
 * Tools/Frameworks Used: {{tools}}
+* Platform: {{platform}}
 
 ### Work Performed
 {{work}}

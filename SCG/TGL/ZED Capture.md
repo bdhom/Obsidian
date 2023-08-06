@@ -7,6 +7,7 @@ The "ZED Capture" program was used to gather data points, (specially formatted) 
 * Team Work Description: Sole developer. Started form scratch
 * Languages Used: python, HTML, CSS
 * Tools/Frameworks Used: Flask, Docker, git
+* Platform: Embedded Linux
 
 ### Work Performed
 * Created a web server to host the test set capturing which allowed the technician to see frames captured as well as the next point to capture for the set

@@ -7,6 +7,7 @@ The "TGL Service Base" library serves as the foundational framework for TGL C++ 
 * Team Work Description: Mostly sole developer aside from CI/CD. Started from scratch
 * Languages Used: C++, shell
 * Tools/Frameworks Used: Docker, CMake, clang-format, git
+* Platform: Embedded Linux
 
 ### Work Performed
 * Developed "TGL Service Base" MQTT and logging functionalities for use in Docker containers running TGL C++ components

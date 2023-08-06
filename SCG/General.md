@@ -5,7 +5,7 @@
 	* No repos as of 2023-06-22
 - [ ] 401k Account/Contributions ➕ 2023-07-28
 - [ ] Check S3 logs for EMMC test unit fsgd017698fcd4a from 2023-05-26 to 2023-06-16 ➕ 2023-07-28
-- [ ] Ensure all current projects filled out ➕ 2023-07-29
+- [x] Ensure all current projects filled out ➕ 2023-07-29 ✅ 2023-08-06
 	- [x] TGL ➕ 2023-07-29 ✅ 2023-08-05
 		- [x] Ball Origin Spotter (BOS) ➕ 2023-07-29 ✅ 2023-07-30
 		- [x] TGL Service Base ➕ 2023-07-29 ✅ 2023-08-05
@@ -13,19 +13,16 @@
 		- [x] ZED Capture ➕ 2023-07-31 ✅ 2023-08-05
 	- [x] Duke ➕ 2023-07-29 ✅ 2023-08-05
 		- [x] Extended Holding Unit (EHU) ➕ 2023-07-29 ✅ 2023-08-05
-	- [ ] Full Swing ➕ 2023-07-29
-		- [ ] Firmware ➕ 2023-07-29
-		- [ ] Docker KIT Container ➕ 2023-07-29 
-		- [ ] EMMC Wear Testing ➕ 2023-07-29
+	- [x] Full Swing ➕ 2023-07-29 ✅ 2023-08-06
+		- [x] Firmware ➕ 2023-07-29 ✅ 2023-08-06
+		- [x] EMMC Wear Testing ➕ 2023-07-29 ✅ 2023-08-06
 - [ ] Ensure all past projects archived and filled out ➕ 2023-07-29
 	- [ ] Full Swing ➕ 2023-07-29
 		- [ ] Broadcast Dashboard ➕ 2023-07-29
 		- [ ] Tracer ➕ 2023-07-29
 		- [ ] LM App ➕ 2023-07-29
-		- [ ] Testing ➕ 2023-07-29 
 		- [ ] AWS Lambdas ➕ 2023-07-29 
 		- [ ] Drone Ball Detection ➕ 2023-07-30 
-		- [ ] Others??76
 	- [ ] Duke ➕ 2023-07-29
 		- [ ] Proofer Baker Center (PBC) ➕ 2023-07-29 
 		- [ ] Sous Chef App ➕ 2023-07-29

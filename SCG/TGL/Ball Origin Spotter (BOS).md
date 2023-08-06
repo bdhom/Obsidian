@@ -12,6 +12,7 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 * Team Work Description: Sole developer. Started from scratch
 * Languages Used: C++, python, shell
 * Tools/Frameworks Used: ZED SDK, CUDA, TensorRT, YOLOv8, Docker, CMake, clang-format, git
+* Platform: Embedded Linux
 
 ### Work Performed
 * Conducted discovery for NVIDIA Jetson and ZED camera platforms running Docker containers with ML models for object detection and positioning/distance measurements

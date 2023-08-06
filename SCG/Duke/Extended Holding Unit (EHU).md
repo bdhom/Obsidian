@@ -8,6 +8,7 @@ The "Extended Holding Unit" (EHU) is a partial porting of a previous project, th
 * Team Work Description: Team of 2
 * Languages Used: C++
 * Tools/Frameworks Used: Qt (GUI)
+* Platform: Embedded Linux
 
 ### Work Performed
 * Implemented methods to digest calibration values over CAN bus and relay these values up to the database to be stored and used after EOL (i.e. to be used in the field)
