@@ -22,5 +22,5 @@
 ## Tasks
 
 ### Self-Created Tasks
-- [ ] Ensure that all data to be gathered from BOS test is correct ➕ 2023-07-29
-- [ ] Create statistical data points for min, max, and average for certain items ➕ 2023-07-28
+- [ ] Ensure that all data to be gathered from BOS test is correct #TODO/Metrics  ➕ 2023-07-29
+- [ ] Create statistical data points for min, max, and average for certain items #TODO/Metrics   ➕ 2023-07-28

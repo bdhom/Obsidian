@@ -18,6 +18,7 @@ The "ZED Capture" program was used to gather data points, (specially formatted) 
 ## Tasks
 
 ### Self-Created Tasks
+- [ ] Look into providing 3D point cloud as data for BOS to consume #TODO/Capture  ➕ 2023-08-07
 
 ### JIRA Tasks
 

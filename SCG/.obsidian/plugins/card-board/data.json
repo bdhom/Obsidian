@@ -1,0 +1,160 @@
+{
+  "version": "0.10.0",
+  "data": {
+    "boardConfigs": [
+      {
+        "tag": "tagBoardConfig",
+        "data": {
+          "columns": [
+            {
+              "tag": "BACKLOG/",
+              "displayTitle": "Backlog"
+            },
+            {
+              "tag": "TODO/",
+              "displayTitle": "TODO"
+            },
+            {
+              "tag": "INPROG/",
+              "displayTitle": "In Progress"
+            }
+          ],
+          "showColumnTags": true,
+          "completedCount": 10,
+          "filters": [
+            {
+              "tag": "tagFilter",
+              "data": "BACKLOG/"
+            },
+            {
+              "tag": "tagFilter",
+              "data": "INPROG/"
+            },
+            {
+              "tag": "tagFilter",
+              "data": "TODO/"
+            },
+            {
+              "tag": "pathFilter",
+              "data": "TGL/BOS"
+            }
+          ],
+          "filterPolarity": "Allow",
+          "filterScope": "Both",
+          "showFilteredTags": true,
+          "includeOthers": false,
+          "includeUntagged": false,
+          "title": "TGL/BOS",
+          "collapsedColumns": [
+            0
+          ]
+        }
+      },
+      {
+        "tag": "tagBoardConfig",
+        "data": {
+          "columns": [
+            {
+              "tag": "BACKLOG/",
+              "displayTitle": "Backlog"
+            },
+            {
+              "tag": "TODO/",
+              "displayTitle": "TODO"
+            },
+            {
+              "tag": "INPROG/",
+              "displayTitle": "In Progress"
+            }
+          ],
+          "showColumnTags": true,
+          "completedCount": 10,
+          "filters": [
+            {
+              "tag": "fileFilter",
+              "data": "TGL/TGL Service Base.md"
+            },
+            {
+              "tag": "tagFilter",
+              "data": "BACKLOG/"
+            },
+            {
+              "tag": "tagFilter",
+              "data": "TODO/"
+            },
+            {
+              "tag": "tagFilter",
+              "data": "INPROG/"
+            }
+          ],
+          "filterPolarity": "Allow",
+          "filterScope": "Both",
+          "showFilteredTags": true,
+          "includeOthers": false,
+          "includeUntagged": false,
+          "title": "TGL/Service Base",
+          "collapsedColumns": []
+        }
+      },
+      {
+        "tag": "tagBoardConfig",
+        "data": {
+          "columns": [
+            {
+              "tag": "BACKLOG/",
+              "displayTitle": "Backlog"
+            },
+            {
+              "tag": "TODO/",
+              "displayTitle": "TODO"
+            },
+            {
+              "tag": "INPROG/",
+              "displayTitle": "In Progress"
+            }
+          ],
+          "showColumnTags": true,
+          "completedCount": 10,
+          "filters": [
+            {
+              "tag": "tagFilter",
+              "data": "BACKLOG/"
+            },
+            {
+              "tag": "tagFilter",
+              "data": "TODO/"
+            },
+            {
+              "tag": "fileFilter",
+              "data": "Duke/Extended Holding Unit (EHU).md"
+            },
+            {
+              "tag": "tagFilter",
+              "data": "INPROG/"
+            }
+          ],
+          "filterPolarity": "Allow",
+          "filterScope": "Both",
+          "showFilteredTags": true,
+          "includeOthers": false,
+          "includeUntagged": false,
+          "title": "Duke/EHU",
+          "collapsedColumns": []
+        }
+      }
+    ],
+    "globalSettings": {
+      "taskCompletionFormat": "ObsidianCardBoard",
+      "columnNames": {
+        "today": "",
+        "tomorrow": "",
+        "future": "",
+        "undated": "",
+        "others": "",
+        "untagged": "",
+        "completed": ""
+      },
+      "ignoreFileNameDates": false
+    }
+  }
+}

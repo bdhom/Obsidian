@@ -24,11 +24,11 @@ The "TGL Service Base" library serves as the foundational framework for TGL C++ 
 ## Tasks
 
 ### Self-Created Tasks
-- [ ] Update MQTT topics to fit confluence reference ➕ 2023-07-28
-- [ ] Remove the use of detached process and replace with futures/asyncs (std::launch::async??) ➕ 2023-08-05
+- [ ] Update MQTT topics to fit confluence reference #TODO  ➕ 2023-07-28
+- [ ] Remove the use of detached process and replace with futures/asyncs (std::launch::async??) #TODO  ➕ 2023-08-05
 	- [ ] Have a proper clean-up for the futures (use wait_for(0)) ➕ 2023-08-05
 	- https://putridparrot.com/blog/threads-promises-futures-async-c/
-- [ ] Command handle to process individual commands from cmd line (baseservicebuilder) ➕ 2023-07-28
+- [ ] Command handle to process individual commands from cmd line (baseservicebuilder) #BACKLOG  ➕ 2023-07-28
 - [x] Determine why CI/CD build is failing on the unit tests ➕ 2023-08-01 ✅ 2023-08-03
 
 ### Jira Tasks
