@@ -29,6 +29,10 @@ The "TGL Service Base" library serves as the foundational framework for TGL C++ 
 	- [ ] Have a proper clean-up for the futures (use wait_for(0)) ➕ 2023-08-05
 	- https://putridparrot.com/blog/threads-promises-futures-async-c/
 - [ ] Command handle to process individual commands from cmd line (baseservicebuilder) #BACKLOG  ➕ 2023-07-28
+- [ ] Convert local time to GM/UTC time #TODO ➕ 2023-08-08
+	https://en.cppreference.com/w/cpp/chrono/c/gmtime
 - [x] Determine why CI/CD build is failing on the unit tests ➕ 2023-08-01 ✅ 2023-08-03
+- [x] Handle messages that have no repsonse topic ➕ 2023-08-10 ✅ 2023-08-10
+- [x] Implement send system event message method ➕ 2023-08-10 ✅ 2023-08-10
 
 ### Jira Tasks

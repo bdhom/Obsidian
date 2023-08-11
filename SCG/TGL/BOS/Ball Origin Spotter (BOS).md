@@ -43,12 +43,17 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 	* Reason for research: https://www.stereolabs.com/docs/depth-sensing/using-depth/#measuring-distance-in-point-cloud
 - [ ] Determine why ZED X daemon is not able to be reached by Docker container and if needed #TODO ➕ 2023-08-05 
 	- [ ] See if this will allow us to restart the camera if it is not responding ➕ 2023-08-05
-- [x] Rename from "detection"/"zed-detection" to "Ball Origin Spotter"/"BOS" #INPROG ➕ 2023-08-04 @completed(2023-08-07T15:10:41)
 - [ ] Rename variables to fit standard (yolov8) #BACKLOG ➕ 2023-08-04
 - [ ] Ensure that object positioning coordinate system are same as documentation #TODO ➕ 2023-08-06 
+- [ ] Create an SDK/CMake or image based solution for working on ZED Box in parallel with other developers #TODO ➕ 2023-08-10
 - [x] Ensure that above description is correct/fact-checked ➕ 2023-07-29 ✅ 2023-07-30
 - [x] Update submodule once TGL Service Base updated?? ➕ 2023-07-28 ✅ 2023-08-04
 - [x] Get rid of deprecated warnings ➕ 2023-07-28 ✅ 2023-08-04
+- [x] Rename from "detection"/"zed-detection" to "Ball Origin Spotter"/"BOS" #INPROG ➕ 2023-08-04 @completed(2023-08-07T15:10:41)
 
 ### Jira Tasks
 
+- [x] TGLBOS-27: Set up object detection in ROI #INPROG ➕ 2023-08-08 @completed(2023-08-08T15:00:26)
+	- Set up scanning area to cover the ROI defined in the requirements. The device should scan as many slices as needed to scan at full resolution without downsizing the image. [https://fullswing.atlassian.net/wiki/spaces/TGL/pages/3373269154/2.4.1+Ball+Origin+Spotter](https://fullswing.atlassian.net/wiki/spaces/TGL/pages/3373269154/2.4.1+Ball+Origin+Spotter)
+- [ ] TGLBOS-28: Set up object classification in ROI #INPROG ➕ 2023-08-08
+	
