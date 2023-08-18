@@ -45,7 +45,7 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 	- [ ] See if this will allow us to restart the camera if it is not responding ➕ 2023-08-05
 - [ ] Rename variables to fit standard (yolov8) #BACKLOG ➕ 2023-08-04
 - [ ] Ensure that object positioning coordinate system are same as documentation #TODO ➕ 2023-08-06 
-- [ ] Create an SDK/CMake or image based solution for working on ZED Box in parallel with other developers #TODO ➕ 2023-08-10
+- [ ] Test new ZED X Camera w/ 2 cameras going - report back the fps #TODO ➕ 2023-08-14
 - [x] Ensure that above description is correct/fact-checked ➕ 2023-07-29 ✅ 2023-07-30
 - [x] Update submodule once TGL Service Base updated?? ➕ 2023-07-28 ✅ 2023-08-04
 - [x] Get rid of deprecated warnings ➕ 2023-07-28 ✅ 2023-08-04
@@ -56,4 +56,29 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 - [x] TGLBOS-27: Set up object detection in ROI #INPROG ➕ 2023-08-08 @completed(2023-08-08T15:00:26)
 	- Set up scanning area to cover the ROI defined in the requirements. The device should scan as many slices as needed to scan at full resolution without downsizing the image. [https://fullswing.atlassian.net/wiki/spaces/TGL/pages/3373269154/2.4.1+Ball+Origin+Spotter](https://fullswing.atlassian.net/wiki/spaces/TGL/pages/3373269154/2.4.1+Ball+Origin+Spotter)
 - [ ] TGLBOS-28: Set up object classification in ROI #INPROG ➕ 2023-08-08
-	
+- [ ] TGLBOS-72: Create an SDK/CMake or image based solution for working on ZED Box in parallel with other developers #TODO ➕ 2023-08-10
+
+## Notes
+### Setup on Windows
+Install CMake if not already installed.
+Install vcpkg package manager:
+``` shell
+git clone https://github.com/microsoft/vcpkg
+.\vcpkg\bootstrap-vcpkg.bat
+```
+Install CUDA (provide details here for v11.5):
+
+Install cuDNN (might be optional):
+
+Install TensorRT (GA 8.6.1):
+https://docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html#installing-zip
+
+Install ZED SDK for CUDA 11:
+https://www.stereolabs.com/developers/release/
+
+Build BOS for windows:
+``` shell
+cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE="[path\to\vcpkg]\scripts\buildsystems\vcpkg.cmake" -DTensorRT_INCLUDE_DIRS="[path\to\tensorrt]\TensorRT-8.6.1.6\include" -DTensorRT_LIBRARIES="[path\to\tensorrt]\TensorRT-8.6.1.6\lib"
+
+cmake --build build
+```
