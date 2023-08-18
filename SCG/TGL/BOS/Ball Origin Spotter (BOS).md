@@ -52,11 +52,10 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 - [x] Rename from "detection"/"zed-detection" to "Ball Origin Spotter"/"BOS" #INPROG ➕ 2023-08-04 @completed(2023-08-07T15:10:41)
 
 ### Jira Tasks
-
+- [ ] TGLBOS-28: Set up object classification in ROI #INPROG ➕ 2023-08-08
+- [x] TGLBOS-72: Create an SDK/CMake or image based solution for working on ZED Box in parallel with other developers #TODO ➕ 2023-08-10 ✅ 2023-08-18
 - [x] TGLBOS-27: Set up object detection in ROI #INPROG ➕ 2023-08-08 @completed(2023-08-08T15:00:26)
 	- Set up scanning area to cover the ROI defined in the requirements. The device should scan as many slices as needed to scan at full resolution without downsizing the image. [https://fullswing.atlassian.net/wiki/spaces/TGL/pages/3373269154/2.4.1+Ball+Origin+Spotter](https://fullswing.atlassian.net/wiki/spaces/TGL/pages/3373269154/2.4.1+Ball+Origin+Spotter)
-- [ ] TGLBOS-28: Set up object classification in ROI #INPROG ➕ 2023-08-08
-- [ ] TGLBOS-72: Create an SDK/CMake or image based solution for working on ZED Box in parallel with other developers #TODO ➕ 2023-08-10
 
 ## Notes
 ### Setup on Windows
@@ -78,7 +77,6 @@ https://www.stereolabs.com/developers/release/
 
 Build BOS for windows:
 ``` shell
-cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE="[path\to\vcpkg]\scripts\buildsystems\vcpkg.cmake" -DTensorRT_INCLUDE_DIRS="[path\to\tensorrt]\TensorRT-8.6.1.6\include" -DTensorRT_LIBRARIES="[path\to\tensorrt]\TensorRT-8.6.1.6\lib"
-
+cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE="[path\to\vcpkg]\scripts\buildsystems\vcpkg.cmake" -DTENSORRT_PATH="[path\to\tensorrt]"
 cmake --build build
 ```

@@ -25,7 +25,8 @@ The "Extended Holding Unit" (EHU) is a partial porting of a previous project, th
 - [ ] EHU-176: As an EHU user I would like to validate that the EHU is able to proceed through the EOL process #TODO ➕ 2023-07-31
 - [ ] EHU-196: Engineering testing validation #TODO ➕ 2023-07-31
 ### In Progress
-- [ ] EHU-219: As a developer I would like to implement a fault aggregate/model class #INPROG  ➕ 2023-08-10
+- [ ] EHU-227: Humidity representation - 1% difference #INPROG ➕ 2023-08-18
+- [ ] EHU-220: As a developer I would like to implement a fault page stack #INPROG ➕ 2023-08-18 
 ### Completed
 - [x] EHU-38: As a EHU user I would like to implement high humidity faults #TODO ➕ 2023-08-04 ✅ 2023-08-07
 - [x] EHU-197: Yocto Learning ➕ 2023-07-31 ✅ 2023-08-04
@@ -40,5 +41,6 @@ The "Extended Holding Unit" (EHU) is a partial porting of a previous project, th
 	- [x] EHU-225: Convert PBC fault types to EHU fault types ➕ 2023-08-10 ✅ 2023-08-14
 	- [x] EHU-226: Convert active/inactive states to active/inactive states with severity levels ➕ 2023-08-10 ✅ 2023-08-14
 	- [x] Convert proofer references in faults and iomodule. Move to oven if possible ➕ 2023-08-14 ✅ 2023-08-14
+- [x] EHU-219: As a developer I would like to implement a fault aggregate/model class #INPROG ➕ 2023-08-10 ✅ 2023-08-18
 
 ## Notes
