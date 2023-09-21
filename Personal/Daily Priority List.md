@@ -1,0 +1,36 @@
+- Disconnect electric in apartment
+- Close lemonade renter's insurance
+- Fix master toilet
+- Shave
+- Laundry
+- Repaint and clean up guest bedroom
+- Child-proof the fireplace
+- Establish lawn watering routine
+- Call GRA Servicing
+- Fix babe's car lights
+- Fix car rear lights
+- Set up pull-up bar
+- Fix water stain on ceiling
+- Sand, texture, and paint Ev's bedroom
+- Set up auto-pay for sewer
+- Set up dehumidifier w/ a hose
+	- Or new dehumidifier possibly?
+- Fix babe's bumper
+- Update driver's license
+- Put in plastic tubes on basement cracks to ensure not growing
+- Clean the gutters
+- Put up key holder
+- Evaluate benefits and insurances
+	- Change life insurance plan?
+- Research alarm systems
+- Set up bug traps
+- Pest control
+- Monthly Budget (August)
+- Ethernet CAT6 patch replacements
+- Transition all work logs to Obsidian
+- PC Backup
+- Determine how to approach HOA
+- Get expert to look at fireplace
+- Put in better drainage
+- Replace basement window
+- Fix roof sidings

@@ -27,6 +27,32 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 
 ## Tasks
 
+### High Priority
+- [ ] Setup the 8 new ZED Box's: #INPROG ➕ 2023-09-12 
+	- [ ] Document/script the process for setting up a ZED Box
+	- [x] Create shell script for starting docker container ✅ 2023-09-14
+	- [x] Create service for running docker script and doing a docker pull if applicable ✅ 2023-09-14
+	- [x] Create mounting points for config.json?? ✅ 2023-09-14
+	- [x] Create service names in config.json based on: https://fullswing.atlassian.net/wiki/spaces/TGL/pages/3367567361/5.6+Pub+Sub+Message+Protocol#Application-Level-Message-Listing 📅 2023-09-19 ✅ 2023-09-16
+- [ ] Create specialized worker threads dedicated for the purposes of speeding up the inference bottle-neck  #INPROG  ➕ 2023-09-14 📅 2023-09-18 
+	- [ ] Post-inference worker
+	- [ ] Pre-inference worker?
+- [ ] Fix neural depth model not downloading entirely on container image #TODO ➕ 2023-09-18
+- Below - Items discussed w/ Jon
+- [ ] Clean up stop record after X frames #TODO ➕ 2023-09-21
+	- Jon may be handling this
+- [ ] Use service health for camera state (poor if error else good) #TODO ➕ 2023-09-19
+- [ ] Create stability in gaining access to the camera #TODO ➕ 2023-09-18 
+	- [ ] May need to reset/restart the camera if unable to open
+	- [ ] Ensure works on Windows
+	- [ ] Ensure works on ZED Box
+	- Keep in mind that ZED Box container is currently unable to obtain access to the "zed_x_daemon" service
+- [x] Add entry point to dev container image #TODO ➕ 2023-09-19 ✅ 2023-09-19
+- [x] Pass command line arguments from "docker run ..." to start.sh #TODO ➕ 2023-09-19 ✅ 2023-09-19
+- [x] Create a dev docker container that holds the app binary and supporting items #TODO ➕ 2023-09-14 📅 2023-09-15 ✅ 2023-09-16
+- [x] Fix testing functionality #TODO ➕ 2023-09-16 ✅ 2023-09-17
+- [x] Configurable record path #TODO ➕ 2023-09-16 ✅ 2023-09-17
+
 ### Self Created Tasks
 - [ ] Object memory #TODO ➕ 2023-07-28 
 	* Objects should be remembered if it is not too far from last position over a specified amount of frames
@@ -45,38 +71,42 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 	- [ ] See if this will allow us to restart the camera if it is not responding ➕ 2023-08-05
 - [ ] Rename variables to fit standard (yolov8) #BACKLOG ➕ 2023-08-04
 - [ ] Ensure that object positioning coordinate system are same as documentation #TODO ➕ 2023-08-06 
-- [ ] Test new ZED X Camera w/ 2 cameras going - report back the fps #TODO ➕ 2023-08-14
+- [ ] Provide VSCode settings file if useful for building alone (w/o Visual Studio) #TODO ➕ 2023-08-28
+- [ ] Look into providing .yml files for zed initialization #TODO ➕ 2023-09-07
+- [ ] Adjust resolution to be highest for each camera supported?? #TODO ➕ 2023-09-07
+- [ ] Cleanup #TODO ➕ 2023-09-16 
+	- [ ] Condense converter and helper functions
+	- [ ] 
+- [x] Return old ZED Box #BACKLOG ➕ 2023-08-28 ✅ 2023-09-12
+- [x] Remove relative offset for radar #TODO ➕ 2023-08-28 ✅ 2023-09-07
+- [x] Setup new ZED Box #INPROG ➕ 2023-08-28 ✅ 2023-09-01
+	- [x] Ensure that new ZED Box is capable of working as quickly as previous ZED Box with latest conversion method ➕ 2023-08-31 ✅ 2023-09-01
+- [x] Transition program to remove use of third-party repo to convert models #INPROG ➕ 2023-08-23 ✅ 2023-08-28
+- [x] Test new ZED X Camera w/ 2 cameras going - report back the fps #TODO ➕ 2023-08-14 ✅ 2023-08-23
 - [x] Ensure that above description is correct/fact-checked ➕ 2023-07-29 ✅ 2023-07-30
 - [x] Update submodule once TGL Service Base updated?? ➕ 2023-07-28 ✅ 2023-08-04
 - [x] Get rid of deprecated warnings ➕ 2023-07-28 ✅ 2023-08-04
 - [x] Rename from "detection"/"zed-detection" to "Ball Origin Spotter"/"BOS" #INPROG ➕ 2023-08-04 @completed(2023-08-07T15:10:41)
 
 ### Jira Tasks
-- [ ] TGLBOS-28: Set up object classification in ROI #INPROG ➕ 2023-08-08
+- [ ] TGLBOS-76: Implement video recording and synchronization to S3 #INPROG ➕ 2023-09-07
+	- [ ] TGLBOS-84: Implement video recording
+		- Start record on tracking arm
+		- End record after hit
+		- ~~Configurable seconds after hit remain recording~~
+	- [ ] TGLBOS-85: Implement synchronization to S3
+- [ ] TGLBOS-82: Start inference on tracking arm and end inference on hit #INPROG ➕ 2023-09-07 
+	- Inference will stay the same
+	- Start recording on arm and end X configurable seconds after hit
+- [x] TGLBOS-28: Set up object classification in ROI #INPROG ➕ 2023-08-08 ✅ 2023-08-29
 - [x] TGLBOS-72: Create an SDK/CMake or image based solution for working on ZED Box in parallel with other developers #TODO ➕ 2023-08-10 ✅ 2023-08-18
 - [x] TGLBOS-27: Set up object detection in ROI #INPROG ➕ 2023-08-08 @completed(2023-08-08T15:00:26)
 	- Set up scanning area to cover the ROI defined in the requirements. The device should scan as many slices as needed to scan at full resolution without downsizing the image. [https://fullswing.atlassian.net/wiki/spaces/TGL/pages/3373269154/2.4.1+Ball+Origin+Spotter](https://fullswing.atlassian.net/wiki/spaces/TGL/pages/3373269154/2.4.1+Ball+Origin+Spotter)
 
 ## Notes
 ### Setup on Windows
-Install CMake if not already installed.
-Install vcpkg package manager:
-``` shell
-git clone https://github.com/microsoft/vcpkg
-.\vcpkg\bootstrap-vcpkg.bat
-```
-Install CUDA (provide details here for v11.5):
-
-Install cuDNN (might be optional):
-
-Install TensorRT (GA 8.6.1):
-https://docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html#installing-zip
-
-Install ZED SDK for CUDA 11:
-https://www.stereolabs.com/developers/release/
-
 Build BOS for windows:
 ``` shell
-cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE="[path\to\vcpkg]\scripts\buildsystems\vcpkg.cmake" -DTENSORRT_PATH="[path\to\tensorrt]"
+cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE="C:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake" -DTENSORRT_PATH="C:\Users\BrycenDhom\Installers\TensorRT-8.6.1.6.Windows10.x86_64.cuda-11.8\TensorRT-8.6.1.6"
 cmake --build build
 ```
