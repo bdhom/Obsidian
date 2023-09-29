@@ -3,7 +3,7 @@ The LM had multiple hardware revisions, some of which looked into swapping out E
 
 ## Take-Aways
 * Start Date: 2023-03-02
-* End Date: 2020-07-10
+* End Date: 2023-07-10
 * Team Work Description: Sole developer
 * Languages Used: bash/shell
 * Tools/Frameworks Used: systemctl

@@ -1,38 +1,34 @@
 
 ## Description
-The "Extended Holding Unit" (EHU) is a partial porting of a previous project, the [[Proofer Baker Center (PBC)]], to fit new hardware that fast-food restaurants (Popeye's mainly) will use to hold food (chicken) for extended periods of time while keeping the holding container within the recommended humidity and temperature ranges.
+The "Extended Holding Unit" (EHU) is a porting of a previous project, the [[Proofer Baker Center (PBC)]], to fit new hardware that fast-food restaurants (Popeye's mainly) will use to hold food (chicken) for extended periods of time while keeping the holding cavity within the recommended humidity and temperature ranges.
 
 ## Take-Aways
 * Start Date: first commit - 2023/07/13
-* End Date: last commit - 2023/09/29
+* End Date: 2023/09/29
 * Team Work Description: Team of 2 w/ 1 senior dev as a reviewer
-* Languages Used: C++
+* Languages Used: C/C++, shell/bash
 * Tools/Frameworks Used: Qt (GUI)
 * Platform: Embedded Linux
 
 ### Work Performed
-* Implemented methods to digest calibration values over CAN bus and relay these values up to the database to be stored and used after EOL (i.e. to be used in the field)
+* Implemented methods to ingest calibration values over CAN bus and relay these values up to the database to be stored and used after EOL (i.e. to be used in the field)
 * Restructured fault system to support finite state machines for each type of fault. Faults have several different severity levels which describe different states and behaviors for other code that needs to observer the faults
+* Performed a week of initial release testing to ensure that soon-to-be delivered software was working as intended
+	* Tight test and release cycles to ensure that all bugs found during testing were not in the initial release
 
 ### Accomplishments
 * Learned how to use a CAN bus analyzer
-* Learned the basic format of a CAN message frame
+* Learned the format of a CAN message frame
+* Fixed a crash that was in the previous codebase (code being ported from)
+	* Bug tied to the qt version that caused crashes when GUI elements were not being garbage-collected appropriately (items being double freed)
+* Contributed to and learned parts of a Yocto build recipe
 
 ## Tasks
 
-### High Priority
-### Backlog
-- [ ] EHU-214: Calibration values not showing correctly #BACKLOG ➕ 2023-08-04
-- [ ] EHU-217: As a EHU user I would like to implement the High Humidity faults on UI the Flextech #BACKLOG  ➕ 2023-08-08
-- [ ] EHU-227: Humidity representation - 1% difference #BACKLOG ➕ 2023-08-18
-	- iomodule.cpp:429 - "//Temperature compensation from HTU3500 data sheet (based on oven rtd...)"
-	- iomodule.cpp - differences in # define's prefixed w/ "HUMIREL3500" vs flextech code
-- [ ] EHU-196: Engineering testing validation #BACKLOG ➕ 2023-07-31
-### TODO
-- [ ] EHU-265: exploratory testing on EHU #TODO  ➕ 2023-09-19 
-### In Progress
-- [ ] EHU-267: As a EHU user I would like to hear an alarm when a fault is encountered. #INPROG ➕ 2023-09-19 
 ### Completed
+- [x] EHU-214: Calibration values not showing correctly #BACKLOG ➕ 2023-08-04 ✅ 2023-09-27
+- [x] EHU-265: exploratory testing on EHU #TODO ➕ 2023-09-19 ✅ 2023-09-22
+- [x] EHU-267: As a EHU user I would like to hear an alarm when a fault is encountered. #INPROG ➕ 2023-09-19 ✅ 2023-09-22
 - [x] EHU-267: Fix System Status Page Crash  #TODO ➕ 2023-09-14 ✅ 2023-09-19
 - [x] EHU-176: As an EHU user I would like to validate that the EHU is able to proceed through the EOL process #TODO ➕ 2023-07-31 ✅ 2023-09-19
 - [x] Fix for JSON mess up #INPROG ➕ 2023-09-11 ✅ 2023-09-11
@@ -57,72 +53,3 @@ The "Extended Holding Unit" (EHU) is a partial porting of a previous project, th
 - [x] EHU-220: As a developer I would like to implement a fault page stack #INPROG ➕ 2023-08-18 ✅ 2023-08-22
 - [x] EHU-199: As a EHU user I would like to store and to be able set a default of the popeyes color mode at manufacturing time #INPROG ➕ 2023-09-01 ✅ 2023-09-05
 - [x] EHU-145: As a EHU user I would like to load a preset list of Popeyes recipe at manufacturing time via JSON file  into the database #INPROG ➕ 2023-09-01 ✅ 2023-09-05
-
-## Notes
-- EHU-265: Exploratory Testing Notes
-	- Findings:
-		- Fault page resources need translations
-		- Oven RTD fault not showing fault page stack immediately when high temp?
-		- Missing or incomplete translations
-			- Boot screen
-			- Contact Us page
-			- System Status page
-			- Diagnostics page
-			- Config Settings page
-			- Color Mode page
-			- 4 Tray Mode page
-			- Tools Settings page
-			- RH Probe Offset page
-			- Recipe Settings page
-			- Cavity Settings page
-			- Recipe Selection page
-			- Recipe Edit page
-			- Tray Config page
-			- Sensor Cal page
-		- Cavity setpoint on centigrade mode
-		- 
-	- Items to explore:
-		- ~~Translations of back menus and text~~
-		- Marketing Requirements:
-			- Runtime Screen:
-				- ~~Boot Screen~~
-				- Settings Selection
-				- ~~Audible Alarms~~
-				-  ~~Start Tray~~ 
-				- ~~Stop Tray~~
-				- Expire Tray
-				- ~~Transfer Product Messaging~~
-			- States:
-				- Idle
-				- Preheating Indicator
-				- Soak
-				- Ready
-				- Faulted State
-			- Beeper:
-				- Timer Expiration
-				- Beeper On/Off in config
-			- Recipe Manager:
-				- Cavity Control:
-					- Water Gain
-					- Humidity
-					- RH% Setpoint
-					- Vent Fan On/Off RH%
-				- Recipe Edit:
-					- Name
-					- Hold Time
-				- Tray Selector
-			- Fault Messaging:
-				- ~~Low Temperature Fault~~
-				- ~~High Temperature Fault~~
-				- Critical Sensor Faults:
-					- CAN Loss
-					- Oven RTD
-					- Ring RTD
-					- RH Probe
-				- High Humidity
-			- Firmware Updates:
-				- From USB
-			- EOL:
-				- Recipe Load
-				- AutoCal
-				- EOL

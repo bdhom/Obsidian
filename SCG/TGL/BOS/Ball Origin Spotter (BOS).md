@@ -1,5 +1,5 @@
 ## Description
-The "Ball Origin System" (BOS) is an application designed to precisely detect and locate a golf ball on its tee position and communicate this information seamlessly to MQTT consumers. The heart of this system lies in its machine learning (ML) models, trained to accurately identify both golf balls and clubs, and a ZED camera used for millimeter-accurate stereographic depth estimations. The ML models work in conjunction with TensorRT (models as TensorRT engine files), enabling real-time updates to consumers as soon as the designated ball, determined through a series of selected algorithms, is successfully located or in case it becomes lost. For the discovery phase, the following hardware was used:
+The "Ball Origin System" (BOS) is an application designed to precisely detect and locate a golf ball on its tee position and communicate this information seamlessly to MQTT consumers. The heart of this system lies in its machine learning (ML) models, trained to accurately identify both golf balls and clubs, and a ZED camera used for millimeter-accurate stereographic depth estimations. The ML models work in conjunction with TensorRT, enabling real-time updates to consumers as soon as the designated ball, determined through a series of selected algorithms, is successfully located or in case it becomes lost. For the discovery phase, the following hardware was used:
 * NVIDIA Jetson Xavier NX (J2021)
 * ZED 2i Camera
 Once the discovery phase ended, more sophisticated hardware was utilized for better performance:
@@ -8,8 +8,8 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 
 ## Take-Aways
 * Start Date: first commit - 2023-05-02
-* End Date: last commit - 2023-07-07 (will have future work)
-* Team Work Description: Sole developer. Started from scratch
+* End Date: last commit - 2023-09-29
+* Team Work Description: Sole developer for 4 months until 3 weeks before initial release in September where one other developer began assisting for end of September initial release date
 * Languages Used: C++, python, shell
 * Tools/Frameworks Used: ZED SDK, CUDA, TensorRT, YOLOv8, Docker, CMake, clang-format, git
 * Platform: Embedded Linux
@@ -28,20 +28,16 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 ## Tasks
 
 ### High Priority
-- [ ] Setup the 8 new ZED Box's: #INPROG ➕ 2023-09-12 
-	- [ ] Document/script the process for setting up a ZED Box
-	- [x] Create shell script for starting docker container ✅ 2023-09-14
-	- [x] Create service for running docker script and doing a docker pull if applicable ✅ 2023-09-14
-	- [x] Create mounting points for config.json?? ✅ 2023-09-14
-	- [x] Create service names in config.json based on: https://fullswing.atlassian.net/wiki/spaces/TGL/pages/3367567361/5.6+Pub+Sub+Message+Protocol#Application-Level-Message-Listing 📅 2023-09-19 ✅ 2023-09-16
 - [ ] Create specialized worker threads dedicated for the purposes of speeding up the inference bottle-neck  #INPROG  ➕ 2023-09-14 📅 2023-09-18 
 	- [ ] Post-inference worker
 	- [ ] Pre-inference worker?
 - [ ] Fix neural depth model not downloading entirely on container image #TODO ➕ 2023-09-18
+	- https://github.com/stereolabs/zed-docker/tree/master#pull-the-image-from-docker-hub - may need to mount an additional volume
 - Below - Items discussed w/ Jon
-- [ ] Clean up stop record after X frames #TODO ➕ 2023-09-21
+- [x] Add mkdir "/tmp/bos-videos" to source code (not container image) #TODO ➕ 2023-09-21 ✅ 2023-09-21
+- [x] Clean up stop record after X frames #TODO ➕ 2023-09-21 ✅ 2023-09-27
 	- Jon may be handling this
-- [ ] Use service health for camera state (poor if error else good) #TODO ➕ 2023-09-19
+- [x] Use service health for camera state (poor if error else good) #TODO ➕ 2023-09-19 ✅ 2023-09-27
 - [ ] Create stability in gaining access to the camera #TODO ➕ 2023-09-18 
 	- [ ] May need to reset/restart the camera if unable to open
 	- [ ] Ensure works on Windows
@@ -64,7 +60,6 @@ Once the discovery phase ended, more sophisticated hardware was utilized for bet
 - [ ] Implement dynamic ROI #TODO ➕ 2023-07-28 
 - [ ] Remove position filter #BACKLOG ➕ 2023-07-28 
 - [ ] Look into providing parallelized GPU support #TODO ➕ 2023-07-28
-- [ ] Look into getting an SDK running on windows (WSL) #BACKLOG  ➕ 2023-08-04
 - [ ] Look into providing depth information from the 3D point cloud rather than the depth mappings #TODO ➕ 2023-08-05 
 	* Reason for research: https://www.stereolabs.com/docs/depth-sensing/using-depth/#measuring-distance-in-point-cloud
 - [ ] Determine why ZED X daemon is not able to be reached by Docker container and if needed #TODO ➕ 2023-08-05 

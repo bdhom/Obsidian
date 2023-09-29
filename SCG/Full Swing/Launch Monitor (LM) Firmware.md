@@ -1,5 +1,7 @@
 ## Description
-The "Full Swing KIT Launch Monitor" (LM) is a device used to track a golf ball while being driven. It calculates various data points using its camera and radar systems.
+The "Full Swing KIT Launch Monitor" (LM) is a device used to track a golf ball while being driven. It measures various data points throughout a golf balls trajectory using its 4k camera and radar system to calculate items such as carry distance and total, ball speed, ball spin, pitch, etc. The firmware created on the digital board was used to process data from the radar board and camera and communicate results to a connected app and to AWS for historical recall purposes. Firmware also handled several other responsibilities such as:
+* Managing updates when an OTA was pushed from AWS
+* Providing a GUI for the user to update device settings/modes and read shot data (rather than only being able to interact w/ on phone)
 
 ## Take-Aways
 * Start Date: 2021-02-15
@@ -22,10 +24,5 @@ The "Full Swing KIT Launch Monitor" (LM) is a device used to track a golf ball w
 - Learned how Linux networking works with WPA supplicant, DHCP client, and Network Manager
 
 ## Tasks
-
-### Self-Created Tasks
-- [ ] Expand on description of the LM as it is currently lackluster ➕ 2023-08-06
-
-### JIRA Tasks
 
 ## Notes

@@ -1,7 +1,7 @@
 ## Tasks
 
 ### Self-Created Tasks
-- [ ] TGL Github repos for ZED data collection, ball origin spotter, ZED test metrics ➕ 2023-06-20
+- [x] TGL Github repos for ZED data collection, ball origin spotter, ZED test metrics ➕ 2023-06-20 ✅ 2023-09-29
 	* No repos as of 2023-06-22
 - [ ] 401k Account/Contributions ➕ 2023-07-28
 - [ ] Check S3 logs for EMMC test unit fsgd017698fcd4a from 2023-05-26 to 2023-06-16 ➕ 2023-07-28
@@ -24,7 +24,7 @@
 		- [ ] AWS Lambdas ➕ 2023-07-29 
 		- [ ] Drone Ball Detection ➕ 2023-07-30 
 	- [ ] Duke ➕ 2023-07-29
-		- [ ] Proofer Baker Center (PBC) ➕ 2023-07-29 
+		- [x] Proofer Baker Center (PBC) ➕ 2023-07-29 ✅ 2023-09-29
 		- [ ] Sous Chef App ➕ 2023-07-29
 	- [ ] Shock Alert ➕ 2023-07-29
 		- [ ] Shock Alert Pro App ➕ 2023-07-29
